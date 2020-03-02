@@ -4,7 +4,7 @@ Run the following commands:
 
 - `npm install`
 - `npm run start`
-- got to `http://localhost:3000`
+- go to `http://localhost:3000`
 
 ### Get all the products:
 - GET http://localhost:3000/products
