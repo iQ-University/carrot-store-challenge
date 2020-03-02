@@ -13,7 +13,7 @@ Run the following commands:
 - GET http://localhost:3000/product/{id}
 
 
-## Challenge:
+## Requirement:
 
-Fetch the content and display it in HTML.
+Fetch the content from the REST API server and display it in HTML instead of the static text for products and comments.
 Use the fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
