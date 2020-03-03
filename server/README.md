@@ -1,6 +1,8 @@
 ## How to start the REST server
 
-Run the following commands:
+Install Node.js: https://nodejs.org/en/download/
+
+Run the following commands in this folder:
 
 - `npm install`
 - `npm run start`
