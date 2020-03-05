@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CBD8C1;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/******************NAVBAR *****************/
+nav {
+    background-color: #434A3E;
+    color: #FFFFFF;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.navBarDisplay {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.pacifico {
+   font-family: 'Pacifico' ;
+}
+
+nav div ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+nav div ul li {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    list-style: none;  
+}
+
+nav div ul li:nth-child(3) {
+    margin-left: auto;
+    text-align: right;
+}
+
+/******************* SEARCH BAR ****************************/
+
+.searchBar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.searchBar h1 {
+    font-size: 30px;
+    margin-right: 100px;
+ 
+}
+
+.searchBar > form {
+    display: flex;
+    flex: 1;
+}
+
+.searchBar  input[type=text] {
+    width: 100%;
+    height: 30px;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  .searchBar button {
+      border: none;
+      margin-top: 8px;
+      background-color: #FFFFFF;
+      border-left: 1px solid #CBD8C1;
+      height: 42px;
+      width: 60px;
+    position: relative;
+}
+
+.searchBar button::after {
+    content: '';
+    background-image: url('svg/search-solid.svg');
+    background-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+
+/* ****************Cards***************** */
+
+.cardsContainer {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#card {
+    width: 30%; 
+    max-width: 300px;
+    height: 300px;
+    background-color: #FFFFFF;
+    text-align: left;
+    color: #707070;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+#card p {
+    margin-left: 5px;
+}
+#card:last-child {
+    margin-right: 0;
+}
+  #card img {
+    height: 65%;
+    width: 100%;
+      
+  }
+#card button {
+    margin-left:120px;
+    background-color: #EC7A23;
+    color: #FFFFFF;
+    width: 50%;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+/***********************PAGINATION*********************/
+.pagination {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    background-color:#FFFFFF;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+    .pagination a.active {
+    background-color: #707070;
+    color: white;
+  }
+  
+
+  /**************FOOTER*********************/
+
+  .footer {
+    max-width: 100%;
+    margin-top: 50px;
+    background-color: #707070;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer div ul {
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 50px;
+    
+}
+
+
+.footer div ul li{
+    width: 100px;
+    padding: 5px;
+ }
+
+    
+.wrapper { 
+    max-width: 960px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+.wrapper p {
+    margin-top: 30px;
+    text-align: left; 
+    
+}
+.wrapper img {
+    margin-left: 5em;
+    margin-top: 2em;
+    width: 80px;
+    height: 80px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
