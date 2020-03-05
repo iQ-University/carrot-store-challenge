@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,64 +11,57 @@
     <link rel="stylesheet" type="text/css" href="list.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div id="leftHeader">
-            <span id="logo">Bunbun's</span>
-            <nav>
-                <span>Home</span>
-                <span>List</span>
-            </nav>
-        </div>
-
-        <div id="rightHeader">
-            <img 
-                src="../images/shopping-cart-solid.svg" 
-                alt="shipping cart"
-                height="20"
-                width="20" />
-            <span id="cartText">Cart</span>
-            <span>Log In</span>    
-        </div>
-    </header>
-
-    <main>
-        <div id="searchAreaContainer">
-            <div>Carrots list</div>
-            <img 
-                id="imgContainer"
-                src="../images/search-solid.svg" 
-                alt="search logo"
-                height="35"
-                width="35" />
-            <input id="inputContainer" type="search" />
-        </div>
-
-        <div id="cardsContainer">
-        </div>
-
-        <div id="pagesNav">
-            <div class=pagesNavItem>
-                &laquo;
-            </div>
-            <div class=pagesNavItem>
-                1
-            </div>
-            <div class=pagesNavItem>
-                2
-            </div>
-            <div class=pagesNavItem>
-                3
+    <div class="background__container">
+        <header>
+            <div id="leftHeader">
+                <span id="logo">Bunbun's</span>
+                <nav>
+                    <span>Home</span>
+                    <span>List</span>
+                </nav>
             </div>
 
-            <div class=pagesNavItem>
-                &raquo
+            <div id="rightHeader">
+                <img src="../images/shopping-cart-solid.svg" alt="shipping cart" height="20" width="20" />
+                <span id="cartText">Cart</span>
+                <span>Log In</span>
+            </div>
+        </header>
+        <main>
+            <div id="searchAreaContainer">
+                <div>Carrots list</div>
+                <img id="imgContainer" src="../images/search-solid.svg" alt="search logo" height="35" width="35" />
+                <input id="inputContainer" type="search" />
             </div>
 
-        </div>
+            <div id="cardsContainer">
+            </div>
 
-    </main>
-    
+            <div id="pagesNav">
+                <div class=pagesNavItem>
+                    &laquo;
+                </div>
+                <div class=pagesNavItem>
+                    1
+                </div>
+                <div class=pagesNavItem>
+                    2
+                </div>
+                <div class=pagesNavItem>
+                    3
+                </div>
+
+                <div class=pagesNavItem>
+                    &raquo
+                </div>
+
+            </div>
+
+        </main>
+    </div> <!-- end of background__container -->
+
     <footer>
         <div class="left__footer">
             <p>RSS Feed</p>
@@ -82,7 +76,7 @@
                 Many
                 desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
                 and a
-                search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                search for 'lorem ipsum' will uncover many web sites still in their infancy.
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
             </p>
             <p class="copyright">&copy; 2007-2019 Bunbun's & CO</p>
@@ -97,10 +91,10 @@
             </svg>
         </div>
     </footer>
-    <script   src="../models/ProductsList.js"></script>
-    <script   src="../controllers/displayProductsList.js"></script>
+
+    <script src="../models/ProductsList.js"></script>
+    <script src="../controllers/displayProductsList.js"></script>
 
 </body>
+
 </html>
-
-
