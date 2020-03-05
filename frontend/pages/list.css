@@ -1,0 +1,106 @@
+main {
+    height: 120vh; 
+    padding: 40px 100px;
+    background-color: var(--background-color);
+    color: var(--pageFooter-color);
+}
+
+
+/* search area styles */
+
+#searchAreaContainer {
+    margin-bottom: 50px;
+}
+
+#searchAreaContainer>div:first-child {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--pageHeader-color);
+}
+
+#inputContainer {
+    float: right;
+    background-color: white;
+    outline: none;
+    width: 70%;
+    height: 40px;
+    border: none;
+}
+
+/* cards styles */
+
+#cardsContainer {
+  font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px 10px 10px 0; 
+    width: calc((100% - 20px)/ 3);
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+div.card:nth-child(3n+0) {
+    margin-right: 0; 
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card>p {
+    padding: 15px 15px 70px 15px;
+    font-size: 24px;
+    color: var(--pageFooter-color);
+}
+
+.card div {
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* navigation through pages */
+
+#pagesNav {
+    font-size: 0;
+    clear: both;
+    width: 150px;
+    margin: 90px auto;
+}
+
+.pagesNavItem {
+    font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 8px;
+    border: 1px solid grey;
+    border-right: none;
+    background-color: white;
+}
+
+.pagesNavItem:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.pagesNavItem:last-child{
+    border-right: 1px solid grey;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+}
+
+.pagesNavItem:nth-child(3){
+    background-color: black;
+    color: white;
+}
