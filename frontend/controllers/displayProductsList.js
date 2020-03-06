@@ -14,10 +14,7 @@ function renderProducts(productsContainer, productsList) {
         var card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-            <img 
-                src=${imgUrl} 
-                height="240"
-                width="320" />
+            <img src=${imgUrl} />
             <p>${name}</p>
             <div class="button">More</div>    
         `

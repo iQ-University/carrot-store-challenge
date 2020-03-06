@@ -1,56 +1,71 @@
 main {
-    height: 120vh; 
-    padding: 40px 100px;
-    background-color: var(--background-color);
+    padding-top: 50px;
     color: var(--pageFooter-color);
 }
 
 
 /* search area styles */
 
-#searchAreaContainer {
+.search__area__container {
     margin-bottom: 50px;
+    display: flex;
 }
 
-#searchAreaContainer>div:first-child {
-    display: inline-block;
-    width: 20%;
+.search__area__left {
     height: 40px;
     font-size: 36px;
     font-weight: 900;
     color: var(--pageHeader-color);
+    margin-right: 80px;
 }
 
+.search__area__right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 #inputContainer {
-    float: right;
+    flex-grow: 1;
     background-color: white;
     outline: none;
-    width: 70%;
     height: 40px;
     border: none;
 }
 
+#imgContainer {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+    padding: 8px;
+} 
+
 /* cards styles */
 
-#cardsContainer {
+.cards__container {
   font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
-    display: inline-block;
     margin: 10px 10px 10px 0; 
-    width: calc((100% - 20px)/ 3);
+    width: calc((100% - 20px)/ 3); 
     background-color: #FFFFFF;
     position: relative;
 }
 
-div.card:nth-child(3n+0) {
+.card:nth-child(3n+0) {
     margin-right: 0; 
-}
+} 
 
 .card>img {
-    width: 100%;
-}
+    width: auto;
+    height: auto;
+    max-width: 100%;
+} 
 
 .card>p {
     padding: 15px 15px 70px 15px;
@@ -58,7 +73,7 @@ div.card:nth-child(3n+0) {
     color: var(--pageFooter-color);
 }
 
-.card div {
+.button {
     width: 150px;
     text-align: center;
     padding: 6px;
@@ -68,17 +83,16 @@ div.card:nth-child(3n+0) {
     right: 10px;
 }
 
-
 /* navigation through pages */
 
-#pagesNav {
+.pages__nav__container {
+    display: flex;
+    justify-content: center;
     font-size: 0;
-    clear: both;
-    width: 150px;
-    margin: 90px auto;
+    padding: 60px 0;
 }
 
-.pagesNavItem {
+.pages__nav__item {
     font-size: 10px;
     display: inline-block;
     margin: 0;
@@ -88,19 +102,18 @@ div.card:nth-child(3n+0) {
     background-color: white;
 }
 
-.pagesNavItem:first-child{
+.pages__nav__item:first-child{
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-.pagesNavItem:last-child{
+.pages__nav__item:last-child{
     border-right: 1px solid grey;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    
 }
 
-.pagesNavItem:nth-child(3){
+.pages__nav__item:nth-child(3){
     background-color: black;
     color: white;
 }

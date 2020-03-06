@@ -6,9 +6,9 @@ body {
 }
 
 .background__container {
-    flex-grow: 1;           /* enforce expand background to fill to 100vh*/
+    flex-grow: 1;          /* enforce expand background to fill to 100vh*/
+    display: flex;
 }
-
 
 .main__content{
     flex-grow: 1;

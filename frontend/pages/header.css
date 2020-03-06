@@ -1,8 +1,9 @@
 /* header styles */
 
-header {
+.upper__page__half__header {
     height: 6vh;
-    padding: 15px 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: var(--pageHeader-color);
     color: var(--font-whiteColor);
     vertical-align: center;
