@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    background-color: #CBD8C1;
+    width: 100vw;
+    height: 100vh;
+    color: #707070;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.main-content > button{
+    width: 200px;
+    height: 50px;
+    background-color: #EC7A23;
+    border: none;
+}
+
+.to-the-main-page{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #707070;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer > div{
+    width: 32%;
+    margin: 30px 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.footer > div > p{
+    margin-bottom: 10px;
+}
+
+.footer-links{
+    text-align: right;
+}
+
+.copyRight{
+    text-decoration: underline;
+}
+
+.carrotSvg-container{
+    display: flex;
+    justify-content: center;
+}
+
+.carrot-svg{
+    width: 70px;
+    height: 70px;
+    color: #ffffff;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .footer > div {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer > div {
+        font-size: 10px;
+    }
+}
