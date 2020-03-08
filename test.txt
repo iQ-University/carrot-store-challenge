@@ -1,1 +1,24 @@
 test!
+//   function showResults(data) {
+
+//     var productList = $("#productList");
+//     productList.children().remove();
+
+
+
+
+//   $.each(products, function(i, val) {
+//     const html = document.createElement('a');
+//     html.setAttribute("class", "cardDesc");
+//     html.setAttribute("data-id", val.id);
+//     html.setAttribute("href", "./details.html");
+//     html.addEventListener("click", () => updateLocalStorage(val.id));
+//     html.innerHTML =
+//       `<div class="productDescription">
+//         <img src=${val.imgUrl}/>
+//       </div>
+//       <p class="product-name">${val.name}</p>
+//       `;
+//     // movieList1.append(html);
+//   });
+// };
