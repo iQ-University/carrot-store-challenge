@@ -65,7 +65,7 @@ nav div ul li:nth-child(3) {
     margin-left: 20px;
     margin-top: 50px;
     width: 300px;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .textDescription {
@@ -107,7 +107,7 @@ nav div ul li:nth-child(3) {
 .comments {
     max-width: 960px;
     height: 400px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .comment {

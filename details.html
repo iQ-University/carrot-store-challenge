@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Details</title>    
-    <link rel="stylesheet" type="text/css" href="list2.css"> 
+    <link rel="stylesheet" type="text/css" href="productList.css"> 
     <link rel="stylesheet" type="text/css" href="details.css"> 
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
         </div>
     </nav>
     <main>
-        <div class = "detailsContainer">
+        <div id= "detailsContainer">
             <div class="cardDetails">
                     <img src ="img/market.jpg">
                     <div class="textDescription">
@@ -32,43 +32,43 @@
                         </div>
                 </div>
             </div>
+        </div>
 
-            <div class="comments">
-                <div class="comment">
-                    <img class="avatar" src="img/bunny1.png">
-                    <div>
-                        <p class="name"><b>Vasilica</b></p>
-                        <p>fficia deserunt mollit anim Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    </div>
-                </div>
-                <div class="comment">
-                    <img class="avatar" src="img/bunny2.jpg">
-                    <div>
-                        <p class="name"><b>Rila</b></p>
-                        <p>fficia deserunt mollit anim Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    </div>
-                </div>
-                <div class="comment">
-                    <img class="avatar" src="img/bunny3.jpg">
-                    <div>
-                        <p class="name"><b>Bugsy</b></p>
-                        <p>fficia deserunt mollit anim Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    </div>
+        <div class="comments">
+            <div class="comment">
+                <img class="avatar" src="img/bunny1.png">
+                <div>
+                    <p class="name"><b>Vasilica</b></p>
+                    <p>fficia deserunt mollit anim Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </div>
             </div>
-
-            <div class="form">    
-                <div class="commentForm">
-                    <h3>Leave a comment</h3>            
-                    <form action="/action_page.php">
-                        <label for="fname">Name</label>
-                        <input type="text" id="name" name="Name" placeholder="Name">
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email" placeholder="Email">
-                        <label for="comment">Comment</label>
-                        <textarea id="comment" name="comment"></textarea>
-                    </form>
+            <div class="comment">
+                <img class="avatar" src="img/bunny2.jpg">
+                <div>
+                    <p class="name"><b>Rila</b></p>
+                    <p>fficia deserunt mollit anim Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </div>
+            </div>
+            <div class="comment">
+                <img class="avatar" src="img/bunny3.jpg">
+                <div>
+                    <p class="name"><b>Bugsy</b></p>
+                    <p>fficia deserunt mollit anim Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">    
+            <div class="commentForm">
+                <h3>Leave a comment</h3>            
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Name">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </form>
             </div>
         </div>
     </main>
@@ -88,5 +88,6 @@
             <img src="svg/carrot-solid.svg" alt="Submit" width="32" height="32">
         </div>
     </footer>
+    <script src = "details.js"></script>
 </body>
 </html>
