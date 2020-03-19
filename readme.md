@@ -56,7 +56,7 @@ It's encouraged and good practice to have small commits (atomics), so it's easie
 When you are ready you can press the "New pull request" on *your* repo page and from there select:
  * Base repository - "iQ-University/carrot-store-challenge"
  * Base - The branch with your name
- * Head repository - "YOUR_ACCOUNT_NAME/carro-store-challenge"
+ * Head repository - "YOUR_ACCOUNT_NAME/carrot-store-challenge"
  * Compare - The branch you worked on
 
 

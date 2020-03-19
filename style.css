@@ -1,0 +1,73 @@
+body {
+    background-color: #CBD8C1
+}
+
+main {
+    text-align: center;
+    font-size: 30px;
+    color: #707070;
+}
+
+main > h1 {
+    font-family: 'Pacifico' ;
+}
+
+#seeTheGoods {
+    background-color: #EC7A23;
+    text-align: center;
+    height: 40px;
+    width: 12%; 
+    color:#ffffff;
+    font-size: 20px;
+    margin: 0 auto;
+    }
+#seeTheGoods a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#seeTheGoods >p {
+    padding-top: 0.5em;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25%; 
+    background-color: #707070;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wrapper { 
+    margin-left: 25em;
+    margin-top: 2em;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.wrapper ul {
+    width : 200px;
+    list-style-type: none;
+}
+
+.wrapper p {
+    text-align: justify; 
+    
+}
+.wrapper > svg {
+    margin-left: 2em;
+    margin-top: -1em;
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+}

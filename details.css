@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CBD8C1;
+}
+
+/******************NAVBAR *****************/
+nav {
+    background-color: #434A3E;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.navBarDisplay {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pacifico {
+   font-family: 'Pacifico' ;
+}
+
+nav div ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+nav div ul li {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    list-style: none;  
+}
+
+nav div ul li:nth-child(3) {
+    margin-left: auto;
+    text-align: right;
+}
+
+.details {
+    max-width: 960px;
+    height: 80%;
+}
+
+.cardDetails {
+    margin: 0 auto;
+    max-width: 960px;
+    height: 300px;
+    display: flex;
+}
+
+.cardDetails img {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 300px;
+    /* height: 200px; */
+}
+
+.textDescription {
+    color: #9F9F9F;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.textDescription >h4 {
+    color: #707070
+}
+
+.textDescription h5 {
+    margin-bottom: 5px;
+}
+
+.addToCart {
+    margin-left: 400px;
+    
+}
+.addToCart > button {
+    background-color: #EC7A23;
+    color: #FFFFFF;
+    width: 120px;
+    border: none;
+}
+
+.addToCart> button > svg {
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.addToCart > h5 >span {
+    color: #EC7A23;
+}
+
+.comments {
+    max-width: 960px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.comment {
+    display:flex;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.comment div {
+    margin-left: 15px;
+}
+
+.comment p:last-child {
+   color: #9F9F9F;
+   margin-top: 0px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    color: #707070;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.commentForm {
+    color: #707070;
+    width: 300px;
+}
+
+.form .commentForm {
+    margin: 0 auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+  
+#name {
+    height: 20px;
+}
+
+#email {
+    height: 20px;
+}
+
+#comment {
+    height:100px;
+}
+  
+ 
