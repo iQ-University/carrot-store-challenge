@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', onHtmlLoaded);
 
-function onHtmlLoaded() {
+async function onHtmlLoaded() {
 
-const id =  window.localStorage.getItem("productId");
+    const id = window.localStorage.getItem("productId");
 
-let productDetailsContainer = document.getElementById("upperPageHalfMain");
+    let productDetailsContainer = document.getElementById("upperPageHalfMain");
 
-Product.getProductDetails(id)
-    .then(productData => renderProductDetails(productDetailsContainer,productData));
+    const productData = await Product.getProductDetails(id);
+    renderProductDetails(productDetailsContainer, productData);
 
-function renderProductDetails(productDetailsContainer, productData) {
-    let product = new Product(productData);
+    function renderProductDetails(productDetailsContainer, productData) {
+        let product = new Product(productData);
 
-    let {name, description, price, currency, imgUrl, comments} = product;
+        let { name, description, price, currency, imgUrl, comments } = product;
 
-    let productDetails = document.createElement("div");
-    productDetails.classList.add("product__details");
-    productDetails.innerHTML = `
+        let productDetails = document.createElement("div");
+        productDetails.classList.add("product__details");
+        productDetails.innerHTML = `
         <img class="product__img" src=${imgUrl} />
         <div class="product__details__right">
             <h1>${name}</h1>
@@ -33,15 +33,15 @@ function renderProductDetails(productDetailsContainer, productData) {
             </div>
         </div>
     `
-    productDetailsContainer.appendChild(productDetails);
+        productDetailsContainer.appendChild(productDetails);
 
-    let commentsContainer = document.createElement("div");
-    commentsContainer.classList.add("comments__container");
-    comments.forEach( item => {
-        let {user, comment, userImgUrl} = item;
-        let commentContainer = document.createElement("div");
-        commentContainer.classList.add("comment__container");
-        commentContainer.innerHTML = `
+        let commentsContainer = document.createElement("div");
+        commentsContainer.classList.add("comments__container");
+        comments.forEach(item => {
+            let { user, comment, userImgUrl } = item;
+            let commentContainer = document.createElement("div");
+            commentContainer.classList.add("comment__container");
+            commentContainer.innerHTML = `
             <div class="picture__name">
                 <img class="user__picture" src=${userImgUrl} />
                 <div class="user__comment">
@@ -51,13 +51,13 @@ function renderProductDetails(productDetailsContainer, productData) {
             </div>    
             <p class="mobile__comment">${comment}</p>   
         `
-        commentsContainer.appendChild(commentContainer);
+            commentsContainer.appendChild(commentContainer);
 
-    })
+        })
 
-    productDetailsContainer.appendChild(commentsContainer);
+        productDetailsContainer.appendChild(commentsContainer);
 
-    
-} // end of renderProductDetails
+
+    } // end of renderProductDetails
 
 } // end of function onHtmlLoaded()
