@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List</title>
+    <link rel="stylesheet" type="text/css" href="crossPagesStyles.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="list.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background__container">
+        <div class="upper__page__half">
+            <header class="upper__page__half__header justify__align">
+                <div id="leftHeader">
+                    <a href="./index.html"><span id="logo">Bunbun's</span></a>
+                    <nav>
+                        <span>Home</span>
+                        <span>List</span>
+                    </nav>
+                </div>
+
+                <div id="rightHeader">
+                    <img src="../images/shopping-cart-solid.svg" alt="shipping cart" height="20" width="20" />
+                    <span id="cartText">Cart</span>
+                    <span>Log In</span>
+                </div>
+            </header>
+            <main class="upper__page__half__main justify__align">
+                <div class="search__area__container">
+                    <div class="search__area__left">Carrots list</div>
+                    <div class="search__area__right">
+                        <input id="inputContainer" type="search" />
+                        <div id="imgContainer">
+                            <img src="../images/search-solid.svg" alt="search logo" height="25" width="25" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="cardsContainer" class="cards__container">
+                </div>
+                <div class="pages__nav__container">
+                    <div class=pages__nav__item>
+                        &laquo;
+                    </div>
+                    <div class=pages__nav__item>
+                        1
+                    </div>
+                    <div class=pages__nav__item>
+                        2
+                    </div>
+                    <div class=pages__nav__item>
+                        3
+                    </div>
+
+                    <div class=pages__nav__item>
+                        &raquo
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div> <!-- end of background__container -->
+
+    <div class="footer__container justify__align">
+        <footer>
+            <div class="web_footer">
+                <div class="left__footer">
+                    <p>RSS Feed</p>
+                    <p>Tweeter</p>
+                    <p>Contact</p>
+                </div>
+                <div class="middle__footer">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution
+                        of letters, as opposed to using 'Content here, content here', making it look like readable
+                        English.
+                        Many
+                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text,
+                        and a
+                        search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    </p>
+                    <p class="copyright">&copy; 2007-2019 Bunbun's & CO</p>
+                </div>
+                <div class="right__footer">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="carrot"
+                        class="svg-inline--fa fa-carrot fa-w-16 carrot-svg" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M298.2 156.6c-52.7-25.7-114.5-10.5-150.2 32.8l55.2 55.2c6.3 6.3 6.3 16.4 0 22.6-3.1 3.1-7.2 4.7-11.3 4.7s-8.2-1.6-11.3-4.7L130.4 217 2.3 479.7c-2.9 6-3.1 13.3 0 19.7 5.4 11.1 18.9 15.7 30 10.3l133.6-65.2-49.2-49.2c-6.3-6.2-6.3-16.4 0-22.6 6.3-6.2 16.4-6.2 22.6 0l57 57 102-49.8c24-11.7 44.5-31.3 57.1-57.1 30.1-61.7 4.5-136.1-57.2-166.2zm92.1-34.9C409.8 81 399.7 32.9 360 0c-50.3 41.7-52.5 107.5-7.9 151.9l8 8c44.4 44.6 110.3 42.4 151.9-7.9-32.9-39.7-81-49.8-121.7-30.3z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <p class="copyright mob_copyright">&copy; 2007-2019 Bunbun's & CO</p>
+        </footer>
+    </div>
+
+    <script src="../models/ProductsList.js"></script>
+    <script src="../controllers/displayProductsList.js"></script>
+
+</body>
+
+</html>

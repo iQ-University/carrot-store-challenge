@@ -1,0 +1,128 @@
+:root {
+    --background-color: #CBD8C1;
+    --pageHeader-color: #434A3E;
+    --pageFooter-color: #707070;
+    --font-darkColor: #9F9F9F;
+    --font-whiteColor: #FFFFFF;
+    --btnBackground-color: #EC7A23;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: URL('./pacifico/Pacifico.ttf') format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+
+/* ---------- Containers ------------ */
+.background__container {
+    background-color: var(--background-color);
+}
+
+.footer__container {
+    background-color: var(--pageFooter-color);
+}
+
+.justify__align {
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+/* -------- Buttons on all pages ------- */
+.button {
+    background-color: var(--btnBackground-color);
+    color: var(--font-whiteColor);
+    border-radius: 3px; 
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* ----- footer on all pages ----- */
+
+footer {
+    display: flex;
+    font-size: 10px;
+    color: var(--font-whiteColor);
+    flex-direction: column;
+}
+
+.web_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.left__footer, .middle__footer, .right__footer {
+    width: 32%;
+}
+
+.left__footer > p {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+ .right__footer {
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .carrot-svg {
+    width: 70px;
+    height: 70px;
+}
+
+.mob_copyright {
+    display: none;
+}
+
+@media all and (max-width: 600px) {
+    .justify__align {
+        padding-left: 30px;
+        padding-right: 30px;
+    }  
+
+    footer {
+        font-size: 20px;
+    }
+
+    .middle__footer {
+        display: none;
+    }
+
+    .left__footer, .middle__footer, .right__footer {
+        width: 50%;
+    }
+    
+    .right__footer {
+        justify-content: center;
+     }
+
+     .carrot-svg {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .mob_copyright {
+        display: block;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+    
+}

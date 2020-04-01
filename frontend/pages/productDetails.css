@@ -1,0 +1,174 @@
+.upper__page__half__main, .upper__page__half__add_comment {
+  color: var(--pageFooter-color);
+}
+
+.product__details {
+  display: flex;  
+  margin-top: 50px;
+}
+
+.product__img {
+  /*display: inline-block;*/
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.product__details__right {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__details__right h1 {
+  margin-bottom: 20px;
+}
+
+.product__details__right__bottom {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end; 
+}
+
+.price_container {
+  width: 50%;
+}
+
+.price {
+  font-weight: 900;
+  color: var(--btnBackground-color);
+}
+
+.button {
+  width: 50%;
+  text-align: center;
+  padding: 6px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+@media all and (max-width: 600px) {
+  .product__details {
+    flex-direction: column;
+  }
+
+  .product__details__right {
+    padding: 20px 0 0 0;
+  }
+
+  .product__details__right h1 {
+    text-align: center;
+  }
+
+  .product__details__right p {
+    margin-bottom: 15px;
+  }
+
+  .product__details__right__bottom {
+    justify-content: flex-start;
+    align-items: flex-start;   
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+/* ------------------ comments styles  ---------------*/
+
+.comments__container {
+  padding: 50px 0;
+}
+
+.comment__container {
+  display: flex;
+  margin: 30px 0;
+}
+
+.picture__name {
+  display: flex;
+}
+
+.user__picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.user__name {
+  font-weight: bold;
+}
+
+.user__comment {
+  padding-left: 10px;
+}
+
+.web__comment {
+  margin-bottom: 8px;
+}
+
+.mobile__comment {
+  display: none;
+}
+
+
+/* ------------------ add comment styles  ---------------*/
+
+.comment__fields {
+  width: 33%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.comment__fields h1 {
+  margin-bottom: 25px;
+}
+
+.comment__fields label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.input__field {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  border: 1px solid var(--pageFooter-color);
+}
+
+textarea {
+  height: 100px;
+}
+
+@media all and (max-width: 600px) {
+  .comment__fields {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .comment__fields h1 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  
+  .mobile__comment {
+    display: block;
+  }
+
+  .web__comment {
+    display: none;
+  }
+
+  .comment__container {
+    flex-direction: column;  
+  }
+
+}

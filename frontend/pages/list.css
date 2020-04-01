@@ -1,0 +1,148 @@
+main {
+    padding-top: 50px;
+    color: var(--pageFooter-color);
+}
+
+/* search area styles */
+
+.search__area__container {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.search__area__left {
+    height: 40px;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--pageHeader-color);
+    margin-right: 80px;
+}
+
+.search__area__right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#inputContainer {
+    flex-grow: 1;
+    background-color: white;
+    outline: none;
+    height: 40px;
+    border: none;
+}
+
+#imgContainer {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+    padding: 8px;
+} 
+
+@media all and (max-width: 600px) {
+    .search__area__container {
+        display: none;
+    }
+}
+
+/* cards styles */
+
+.cards__container {
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px 10px 10px 0; 
+    width: calc((100% - 20px)/ 3); 
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.card:nth-child(3n+0) {
+    margin-right: 0; 
+} 
+
+.card>img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+} 
+
+.card>p {
+    padding: 15px 15px 70px 15px;
+    font-size: 24px;
+    color: var(--pageFooter-color);
+}
+
+.button {
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media all and (max-width: 600px) {
+    .cards__container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .card>p {
+        text-align: center;
+        padding: 15px 15px 15px 15px;
+    }
+
+    .button {
+        width: 120px;
+        position: relative;
+        margin: 0 auto 15px auto;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+/* navigation through pages */
+
+.pages__nav__container {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    padding: 60px 0;
+}
+
+.pages__nav__item {
+    font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 8px;
+    border: 1px solid grey;
+    border-right: none;
+    background-color: white;
+}
+
+.pages__nav__item:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.pages__nav__item:last-child{
+    border-right: 1px solid grey;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.pages__nav__item:nth-child(3){
+    background-color: black;
+    color: white;
+}
