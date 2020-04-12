@@ -6,9 +6,10 @@ const getButtonId = (idVal) => {
 let clickedId = JSON.parse(localStorage.getItem("clickedId"));
 let displayData = JSON.parse(localStorage.getItem("fetchedData"));
 
-displayData.map((el) => {
-  if (el.id == clickedId) {
-    const productMarkup = `
+const display = () => {
+  displayData.map((el) => {
+    if (el.id == clickedId) {
+      const productMarkup = `
       <div class="product-details">
         <div class="product-left">
           <img id="prod-image" alt="" src="${el.imgUrl}"/>
@@ -30,8 +31,8 @@ displayData.map((el) => {
         </div>
       </div>
 `;
-    for (let i = 0; i < el.comments.length; i++) {
-      const commentsMarkup = `
+      for (let i = 0; i < el.comments.length; i++) {
+        const commentsMarkup = `
       <div class="reviews">
         <div class="comment">
           <div class="comment-left">
@@ -53,10 +54,13 @@ displayData.map((el) => {
         </div>
       </div>
 `;
-      let commentNode = document.createElement("div");
-      commentNode.innerHTML = commentsMarkup;
-      document.getElementById("insert-comments").appendChild(commentNode);
+        let commentNode = document.createElement("div");
+        commentNode.innerHTML = commentsMarkup;
+        document.getElementById("insert-comments").appendChild(commentNode);
+      }
+      document.getElementById("insert-product").innerHTML = productMarkup;
     }
-    document.getElementById("insert-product").innerHTML = productMarkup;
-  }
-});
+  });
+};
+
+document.getElementById("details-body").onload = display();
