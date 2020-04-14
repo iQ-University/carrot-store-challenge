@@ -17,6 +17,7 @@ const display = () => {
         </div>
         <div class="product-right">
           <div class="description">
+          // check on these ids
             <h3 id="prod-title">
               ${el.name}
             </h3>
