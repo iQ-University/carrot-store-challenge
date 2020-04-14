@@ -16,20 +16,22 @@ const display = () => {
           <img id="prod-image" alt="" src="${el.imgUrl}"/>
         </div>
         <div class="product-right">
-          <div class="description">
-          // check on these ids
-            <h3 id="prod-title">
+          <div class="product-right-top">
+            <h3>
               ${el.name}
             </h3>
-            <p id="prod-description">
+            <p>
               ${el.description}
             </p>
           </div>
-          <a href="" class="btn"
+          <div class="product-right-bottom">
+            <h3>Price: <span>32 ${el.currency}</span></h3>
+            <a href="" class="btn"
             >Add to cart<img
               src="../img/shopping-cart-solid.svg"
               style="width: 20px;"
-          /></a>
+            /></a>
+          </div>
         </div>
       </div>
 `;
