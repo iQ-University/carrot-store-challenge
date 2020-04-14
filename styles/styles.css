@@ -11,14 +11,12 @@ body {
 
 .container {
   width: 90%;
-  /* height: auto; */
   margin: 0 auto;
 }
 
 ul {
   list-style-type: none;
   line-height: 30px;
-  /* padding-bottom: 28px; */
 }
 
 a {
@@ -28,10 +26,8 @@ a {
 
 .logo {
   position: absolute;
-  /* width: 200px; */
   width: 10%;
   right: 50px;
-  /* float: right; */
 }
 
 .hamburger {
@@ -50,7 +46,6 @@ a {
   text-align: center;
   color: #707070;
   font-size: 1.5em;
-  /* background-color: red; */
   width: 500px;
   height: 75%;
   display: flex;
@@ -78,7 +73,7 @@ nav {
   height: 80px;
   background-color: #434a3e;
   display: flex;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 nav .container {
@@ -93,8 +88,6 @@ nav ul li {
 
 nav ul li a {
   padding: 16px 32px;
-  /* margin: 0 15px; */
-  /* background-color: red; */
 }
 
 .nav-left {
@@ -117,6 +110,30 @@ nav ul li a {
   width: 30px;
 }
 
+/* Mobile navbar */
+
+.mobile-menu {
+  display: none;
+  background-color: black;
+  line-height: 50px;
+}
+
+.mobile-menu li {
+  border-bottom: 1px solid grey;
+}
+
+.mobile-menu li:hover {
+  cursor: pointer;
+}
+
+.mobile-menu li a {
+  width: 100%;
+}
+
+.active {
+  display: block;
+  transition: 300ms;
+}
 /* Footer ----------------------------------------------> */
 footer {
   background-color: #707070;
@@ -130,12 +147,10 @@ footer {
 }
 
 .footer-left {
-  /* height: 80%; */
   width: 10%;
 }
 
 .footer-right {
-  /* height: 80%; */
   width: 85%;
 }
 
@@ -149,7 +164,6 @@ footer {
 
 .flex-item {
   width: 30%;
-  /* height: 30%; */
   line-height: 50px;
   margin: 10px 0;
 }
@@ -230,15 +244,12 @@ footer {
   width: 45%;
   display: flex;
   flex-direction: column;
-  /* align-content: space-between; */
   justify-content: space-between;
-  /* line-height: 50px; */
 }
 
 .product-right .btn {
   max-width: 120px;
   margin-left: 70%;
-  /* float: right; */
 }
 
 .description h3 {
@@ -263,7 +274,6 @@ footer {
 .avatar {
   width: 70px;
   height: 70px;
-  /* height: auto; */
   border-radius: 50%;
 }
 
@@ -276,8 +286,6 @@ footer {
   }
 
   .footer-right {
-    /* position: absolute; */
-    /* left: -9999px; */
     display: none;
   }
 
@@ -290,14 +298,17 @@ footer {
     right: 70px;
   }
   /* Navbar -----------------> */
-  nav ul {
+  .nav-left ul {
     display: none;
   }
-  .try {
+  .nav-right ul {
     display: none;
   }
   .hamburger {
     display: block;
+  }
+  .hamburger:hover {
+    cursor: pointer;
   }
   /* Produtc List ----------> */
   .search-bar {
