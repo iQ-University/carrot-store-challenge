@@ -1,4 +1,24 @@
 // Fetch and display logic ------------------------------------>
+// Fetch--------------------------->
+const fetchURL = "http://localhost:3000/products";
+
+const fetchData = () => {
+  fetch(fetchURL)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => localStorage.setItem("fetchedData", JSON.stringify(data)));
+};
+
+const checkIfFetched = () => {
+  if (localStorage.getItem("fetchedData") === null) {
+    fetchData();
+  }
+};
+
+document.getElementsByTagName("body").onload = checkIfFetched();
+
+// Display-------------------------->
 const getButtonId = (idVal) => {
   let clickedId = idVal;
   localStorage.setItem("clickedId", JSON.stringify(clickedId));
@@ -25,7 +45,7 @@ const display = () => {
             </p>
           </div>
           <div class="product-right-bottom">
-            <h3>Price: <span>32 ${el.currency}</span></h3>
+            <h3>Price: <span>${el.price} ${el.currency}</span></h3>
             <a href="" class="btn"
             >Add to cart<img
               src="../img/shopping-cart-solid.svg"
@@ -68,3 +88,16 @@ const display = () => {
 };
 
 document.getElementById("details-body").onload = display();
+
+// Dropdown menu ------------------------------------------->
+let mobileButton = document.getElementsByClassName("hamburger");
+let mobileMenu = document.getElementsByClassName("mobile-menu");
+const showMenu = function () {
+  if (mobileMenu[0].classList.contains("active")) {
+    mobileMenu[0].classList.remove("active");
+  } else {
+    mobileMenu[0].classList.add("active");
+  }
+};
+
+mobileButton[0].onclick = showMenu;
