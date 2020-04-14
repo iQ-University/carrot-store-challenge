@@ -57,7 +57,6 @@ a {
   height: 75%;
   display: flex;
   flex-direction: column;
-  /* pentru ca am dat flex-direction sa fie column, se schimba axa ? */
   justify-content: space-around;
   align-items: center;
 }
@@ -109,8 +108,9 @@ nav ul li a {
 
 .mobile-menu {
   display: none;
-  background-color: black;
+  background-color: #434a3e;
   line-height: 50px;
+  border-top: 1px solid #e7e7e7;
 }
 
 .mobile-menu li {
@@ -128,6 +128,10 @@ nav ul li a {
 .active {
   display: block;
   transition: 300ms;
+}
+
+.nav-right-vertical-align {
+  display: flex;
 }
 /* Footer ----------------------------------------------> */
 footer {
@@ -270,6 +274,12 @@ span {
 /* Form -------------------------------------------> */
 .form {
   margin-bottom: 50px;
+  width: 50%;
+  line-height: 30px;
+}
+
+.form h3 {
+  margin-bottom: 20px;
 }
 
 .form-container {
@@ -280,6 +290,11 @@ span {
 .form input {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.form textarea {
+  width: 100%;
+  /* margin-bottom: 20px; */
 }
 
 /* Responsive -----------------------------------------------------------> */
@@ -296,9 +311,9 @@ span {
   .logo {
     right: 70px;
   }
+
   /* Product details -----------> */
   .product-details {
-    /* flex-direction: column; */
     width: 100%;
     justify-content: space-between;
   }
@@ -381,38 +396,29 @@ span {
     margin: 0 auto;
   }
 
-  /* .footer-right {
-    display: none;
-  }
-
-  .footer-left {
-    width: 100%;
-  }
-
-  .logo {
-    width: 20%;
-    right: 70px;
-  } */
-
   /* Navbar -----------------> */
   .nav-left ul {
     display: none;
   }
+
   .nav-right ul {
     display: none;
   }
+
   .hamburger {
     display: block;
-    padding: 23px 32px;
   }
+
   .hamburger:hover {
     cursor: pointer;
-    background-color: #333a3e;
-    transition: 300ms;
+  }
+
+  .mobile-menu .container li {
+    display: flex;
   }
 
   /* Produtc List ----------> */
-  .search-bar {
+  .search-section {
     display: none;
   }
 
@@ -431,6 +437,7 @@ span {
   .product-details {
     flex-direction: column;
   }
+
   .product-details .btn {
     margin: 0;
     text-align: center;
@@ -459,9 +466,11 @@ span {
     flex-direction: column;
     align-content: flex-start;
   }
+
   .product-right h3 {
     width: 100%;
   }
+
   .product-right .btn {
     display: flex;
     justify-content: center;
