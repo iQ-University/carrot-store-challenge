@@ -105,7 +105,6 @@ nav ul li a {
 }
 
 /* Mobile navbar ------------->*/
-
 .mobile-menu {
   display: none;
   background-color: #434a3e;
@@ -133,6 +132,7 @@ nav ul li a {
 .nav-right-vertical-align {
   display: flex;
 }
+
 /* Footer ----------------------------------------------> */
 footer {
   background-color: #707070;
@@ -294,7 +294,6 @@ span {
 
 .form textarea {
   width: 100%;
-  /* margin-bottom: 20px; */
 }
 
 /* Responsive -----------------------------------------------------------> */

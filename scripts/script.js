@@ -33,7 +33,7 @@ const display = () => {
       const productMarkup = `
       <div class="product-details">
         <div class="product-left">
-          <img id="prod-image" alt="" src="${el.imgUrl}"/>
+          <img alt="" src="${el.imgUrl}"/>
         </div>
         <div class="product-right">
           <div class="product-right-top">
@@ -61,17 +61,16 @@ const display = () => {
         <div class="comment">
           <div class="comment-left">
             <img
-              id="comm-image"
               src="${el.comments[i].userImgUrl}"
               alt=""
               class="avatar"
             />
           </div>
           <div class="comment-right">
-            <h4 id="comm-user">
+            <h4>
               ${el.comments[i].user}
             </h4>
-            <p id="comm-text">
+            <p>
               ${el.comments[i].comment}
             </p>
           </div>
