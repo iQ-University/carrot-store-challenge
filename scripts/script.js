@@ -32,11 +32,11 @@ const display = () => {
     if (el.id == clickedId) {
       const productMarkup = `
       <div class="product-details">
-        <div class="product-left">
+        <div class="product-details-img">
           <img alt="" src="${el.imgUrl}"/>
         </div>
-        <div class="product-right">
-          <div class="product-right-top">
+        <div class="product-details-description">
+          <div class="product-details-description-top">
             <h3>
               ${el.name}
             </h3>
@@ -44,7 +44,7 @@ const display = () => {
               ${el.description}
             </p>
           </div>
-          <div class="product-right-bottom">
+          <div class="product-details-description-bottom">
             <h3>Price: <span>${el.price} ${el.currency}</span></h3>
             <a href="" class="btn"
             >Add to cart<img
@@ -59,14 +59,14 @@ const display = () => {
         const commentsMarkup = `
       <div class="reviews">
         <div class="comment">
-          <div class="comment-left">
+          <div class="comment-image">
             <img
               src="${el.comments[i].userImgUrl}"
               alt=""
               class="avatar"
             />
           </div>
-          <div class="comment-right">
+          <div class="comment-message">
             <h4>
               ${el.comments[i].user}
             </h4>
