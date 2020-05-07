@@ -28,8 +28,8 @@ let clickedId = JSON.parse(localStorage.getItem("clickedId"));
 let displayData = JSON.parse(localStorage.getItem("fetchedData"));
 
 const display = () => {
-  displayData.map((el) => {
-    if (el.id == clickedId) {
+  displayData.forEach((el) => {
+    if (el.id === clickedId) {
       const productMarkup = `
       <div class="product-details">
         <div class="product-left">
