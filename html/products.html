@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Webdev</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="../styles//styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="nav-links">
+          <div class="nav-logo">Bunbun's</div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">List</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions">
+          <ul>
+            <li><img src="../img/shopping-cart-solid.svg" /></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Log In</a></li>
+          </ul>
+          <img src="../img/hamburger.svg" alt="" class="hamburger" />
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <ul class="mobile-menu">
+      <div class="container">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">List</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Log In</a></li>
+      </div>
+    </ul>
+    <!-- Search bar -->
+    <div class="search-section">
+      <div class="container">
+        <h1>Carrots List</h1>
+        <div class="search-bar">
+          <input type="text" />
+          <button><img src="../img/search-solid.svg" alt="" /></button>
+        </div>
+      </div>
+    </div>
+    <!-- Product list -->
+    <div class="container">
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="product-img">
+            <img src="../img/product2.jpg" alt="" />
+          </div>
+          <div class="product-description">
+            <h2>Yaya Hybrid</h2>
+            <div class="button">
+              <a
+                href="./details.html"
+                class="btn"
+                id="0"
+                onclick="getButtonId(this.id)"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="product-img">
+            <img src="../img/product1.jpg" alt="" />
+          </div>
+          <div class="product-description">
+            <h2>Sugarsnax Hybrid</h2>
+            <div class="button">
+              <a
+                href="./details.html"
+                class="btn"
+                id="1"
+                onclick="getButtonId(this.id)"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="product-img">
+            <img src="../img/product3.jpg" alt="" />
+          </div>
+          <div class="product-description">
+            <h2>Danvers 23 Hybrid</h2>
+            <div class="button">
+              <a
+                href="./details.html"
+                class="btn"
+                id="2"
+                onclick="getButtonId(this.id)"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="product-img">
+            <img src="../img/product4.jpg" alt="" />
+          </div>
+          <div class="product-description">
+            <h2>Short'n Sweet</h2>
+            <div class="button">
+              <a
+                href="./details.html"
+                class="btn"
+                id="3"
+                onclick="getButtonId(this.id)"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="product-img">
+            <img src="../img/product5.jpg" alt="" />
+          </div>
+          <div class="product-description">
+            <h2>Caracas Red</h2>
+            <div class="button">
+              <a
+                href="./details.html"
+                class="btn"
+                id="4"
+                onclick="getButtonId(this.id)"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- empty one -->
+        <div class="flex-item"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="">RSS Feed</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, vero
+        dignissimos consequuntur obcaecati praesentium ullam quas sequi non
+        expedita tenetur modi. Eos nemo eaque voluptas excepturi repellat eum,
+        quibusdam quos! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quia, vero dignissimos consequuntur obcaecati praesentium ullam quas
+        sequi non expedita tenetur modi. Eos nemo eaque voluptas excepturi
+        repellat eum, quibusdam quos!
+        <br />
+        <br />
+        &copy; 2007-2019 Bunbun's & CO
+      </div>
+      <img src="../img/logo.svg" alt="" class="logo" />
+    </footer>
+    <!--Javascript -->
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
