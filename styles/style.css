@@ -21,6 +21,7 @@ a:visited {
 	color: white;
 }
 
+/* Reusable header */
 .header-container {
 	background-color: #434a3e;
 	color: white;
@@ -71,6 +72,7 @@ a:visited {
 	padding: 5px 16px 14px 16px;
 }
 
+/* Homepage */
 .title-container {
 	display: flex;
 	color: #707070;
@@ -106,8 +108,9 @@ a:visited {
 	cursor: pointer;
 }
 
+/* Carrot List */
 .page-container {
-	height: 75%;
+	height: 80%;
 	width: 50%;
 	margin-top: 40px;
 	margin-left: 28%;
@@ -223,6 +226,99 @@ a:visited {
 	border: 1px solid #434a3e;
 }
 
+/* Product details */
+.item-details {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.item-img {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	width: 90%;
+}
+
+.item-img .carrot {
+	width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.item-title {
+	color: grey;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.item-price {
+	align-self: flex-end;
+}
+
+.item-price p {
+	margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.item-price span {
+    color: #EC7A23;
+    font-weight: 500;
+}
+
+.item-price button{
+	background-color: #ec7a23;
+	color: white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+	font-size: 15px;;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+.item-price button img {
+	width: 50px;
+	height: 30px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 70px 0 100px 0;
+}
+
+.form {
+	color: grey;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form label {
+    margin: 10px 0;
+}
+
+.form input {
+    padding: 2px;
+    border-radius: 5%;
+    border: 1px solid #9F9F9F;
+}
+
+/* Reusable footer */
 .footer-container {
 	background-color: #707070;
 	color: white;
@@ -260,6 +356,8 @@ a:visited {
 .footer-logo img {
 	height: 100px;
 }
+
+/* Media queries for responsive design */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
