@@ -110,10 +110,11 @@ a:visited {
 
 /* Carrot List */
 .page-container {
-	height: 80%;
+	height: 69.8%;
 	width: 50%;
 	margin-top: 40px;
 	margin-left: 28%;
+	margin-right: 30%;
 }
 
 .search-container {
@@ -159,35 +160,40 @@ a:visited {
 }
 
 .search-result {
-	display: block;
-	height: 80%;
-	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	height: 60%;
+	margin-left: 50px;
 	color: #434a3e;
 }
 
-.search-result .search-item {
+.search-result div {
 	background-color: white;
 	margin: 5px;
 	border: 1px solid #ccc;
 	float: left;
 	width: 200px;
+	height: 260px;
+	flex-basis: 25%;
 }
 
-.search-result .search-item:hover {
+.search-result div:hover {
 	border: 1px solid #434a3e;
 }
 
-.search-result .search-item img {
+.search-result div img {
 	width: 100%;
 	height: 150px;
 }
 
-.search-result .description {
+.search-result p {
 	padding: 15px 15px 50px 15px;
 	background-color: white;
 }
 
-.search-result .description .btn {
+.search-result p button {
 	background-color: #ec7a23;
 	color: white;
 	border: none;
@@ -197,24 +203,26 @@ a:visited {
 	font-size: 15px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	padding: 10px 40px 10px 40px;
+	margin-top: 5px;
+	margin-left: 100px;
 	float: right;
-}
-
-.search-result .description button {
 	cursor: pointer;
 }
 
 .pagination {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
 	background-color: white;
-	bottom: 0;
-	margin-left: 30%;
+	margin-left: 34%;
+	margin-right: 45%;
+	margin-bottom: 20px;
 }
 
 .pagination a {
 	color: #434a43;
 	float: left;
-	padding: 8px 16px;
+	padding: 8px 16.5px;
 	text-decoration: none;
 	border: 1px solid #434a3e;
 	font-size: 10px;
