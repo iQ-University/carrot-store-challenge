@@ -28,11 +28,42 @@
 				</li>
 			</ul>
 		</div>
+
 		<div class="page-container">
-			<div class="item-details"></div>
+			<div class="item-details">
+				<div class="item-img">
+					<img class="carrot" />
+				</div>
+				<p class="item-title"></p>
+				<p class="item-description"></p>
+				<div class="item-price">
+					<p>
+						<span class="price"></span>
+						<span class="currency"></span>
+					</p>
+					<button class="btn" id="addToCartBtn" type="button">
+						Add to cart
+						<img
+							src="mocks/img/shopping-cart-solid.svg"
+							alt="shopping-cart-solid"
+						/>
+					</button>
+				</div>
+			</div>
 			<div class="comments-container"></div>
-			<div class="comment-form"></div>
+			<div class="comment-form">
+				<form class="form">
+					<p>Leave a comment</p>
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Name" />
+					<label for="e-mail">E-mail</label>
+					<input type="email" id="e-mail" placeholder="E-mail" />
+					<label for="comment">Comment</label>
+					<textarea id="comment" cols="30" rows="6"></textarea>
+				</form>
+			</div>
 		</div>
+
 		<div class="footer-container">
 			<div class="contact">
 				<p>RSS Feed</p>
@@ -56,7 +87,9 @@
 					Vestibulum pretium tellus ut mauris rutrum, non pretium
 					magna sagittis.
 				</p>
-				<span class="copyright">&copy; 2007-2019 Bunbun's &amp; CO</span>
+				<span class="copyright"
+					>&copy; 2007-2019 Bunbun's &amp; CO</span
+				>
 			</div>
 			<div class="footer-logo">
 				<svg
@@ -76,5 +109,7 @@
 				</svg>
 			</div>
 		</div>
+
+		<script src="server/server.js"></script>
 	</body>
 </html>
